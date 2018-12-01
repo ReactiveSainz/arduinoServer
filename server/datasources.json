@@ -1,0 +1,12 @@
+{
+  "mlab": {
+    "host": "ds123444.mlab.com",
+    "port": 23444,
+    "url": "mongodb://sainz:sainz12345678@ds123444.mlab.com:23444/arduinoproyect",
+    "database": "arduinoproyect",
+    "password": "sainz12345678",
+    "name": "mlab",
+    "user": "sainz",
+    "connector": "mongodb"
+  }
+}
