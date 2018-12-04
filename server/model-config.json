@@ -16,5 +16,13 @@
   "temperatura": {
     "dataSource": "mlab",
     "public": true
+  },
+  "humedad": {
+    "dataSource": "mlab",
+    "public": true
+  },
+  "registro": {
+    "dataSource": "mlab",
+    "public": true
   }
 }

@@ -1,12 +1,18 @@
 {
-  "name": "temperatura",
+  "name": "registro",
+  "plural": "registros",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
     "validateUpsert": true
   },
   "properties": {
-    "value": {
+    "temperatura": {
+      "type": "number",
+      "required": true,
+      "default": 0
+    },
+    "humedad": {
       "type": "number",
       "required": true,
       "default": 0
