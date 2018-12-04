@@ -11,8 +11,11 @@ module.exports = function(Registro) {
   });
 
   Registro.remoteMethod('postValue', {
-    accepts: [{arg: 'temperatura', type: 'number', required: true}],
-    accepts: [{arg: 'humedad', type: 'number', required: true}],
+    accepts: [
+      {arg: 'temperatura', type: 'number', required: true},
+      {arg: 'humedad', type: 'number', required: true},
+    ],
+
     returns: [{arg: 'status', type: 'string'}],
   });
 
