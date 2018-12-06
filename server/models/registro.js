@@ -13,14 +13,15 @@ module.exports = function(Registro) {
   Registro.remoteMethod('postValue', {
     accepts: [
       {arg: 'temperatura', type: 'number', required: true},
-      {arg: 'humedad', type: 'number', required: true},
     ],
 
     returns: [{arg: 'status', type: 'string'}],
   });
 
-  Registro.postValue = function(temperatura, humedad, cb) {
-    return Registro.create({temperatura, humedad}, function(error, Datos) {
+  Registro.postValue = function(temperatura, cb) {
+    console.log('temp to post:', temperatura);
+    
+    return Registro.create({temperatura}, function(error, Datos) {
       if (error) console.log(error);
       return cb(null, 'ok');
     });

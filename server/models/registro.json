@@ -12,11 +12,6 @@
       "required": true,
       "default": 0
     },
-    "humedad": {
-      "type": "number",
-      "required": true,
-      "default": 0
-    },
     "date": {
       "type": "date"
     }
